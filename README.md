@@ -17,4 +17,8 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-<img src = "https://github.com/Jeremias-2000/quiz-app/blob/master/assets/images/Screenshot_2022-01-25-13-34-11-598_com.example.avaliacao2_quiz.jpg">
+
+<p align="center">
+
+  <img src="https://github.com/Jeremias-2000/quiz-app/blob/master/assets/images/Screenshot_2022-01-25-13-34-11-598_com.example.avaliacao2_quiz.jpg" width="320" alt="accessibility text">
+</p>
