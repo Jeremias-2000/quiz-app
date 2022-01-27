@@ -12,7 +12,7 @@ class AdicionarAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: <Widget>[
+    return  Column(children: <Widget>[
       
       Container(
           width: 150,
@@ -24,7 +24,8 @@ class AdicionarAvatar extends StatelessWidget {
           estiloFonte: GoogleFonts.lilitaOne(
               textStyle: const TextStyle(fontSize: 35.0, color: Colors.black)
           )
-      )
+      ),
+      
     ]);
   }
 }

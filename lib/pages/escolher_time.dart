@@ -20,9 +20,7 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
               MainAxisAlignment.spaceBetween, //espaco entre em cima e em baixo
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              height: 25.0,
-            ),
+            
             Container(
               width: 150,
               height: 150,
@@ -44,12 +42,37 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   AdicionarAvatar(caminhoImagem: "assets/images/avatar1.png", texto: "André"),
-                  AdicionarAvatar(caminhoImagem: "assets/images/avatar3.png", texto: "Laura"),
+                  AdicionarAvatar(caminhoImagem: "assets/images/avatar2.png", texto: "Tiago"),
                 ],
               ),
-            )
+            ),
             
+
+            Expanded(
+              child:Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                    AdicionarAvatar(caminhoImagem: "assets/images/avatar3.png", texto: "Laura"),
+                    AdicionarAvatar(caminhoImagem: "assets/images/avatar4.png", texto: "Marcos"),
+                ],) 
+            
+            ),
+            
+            
+          IconButton(
+            icon: Icon(Icons.play_circle_filled,
+            color: Colors.green,
+            size: 75.0,
+            
+            ),onPressed: (){},
+          
+          ),
+          SizedBox(height: 45.0,)
           ],
+          
+          
+
         ),
       ),
     );

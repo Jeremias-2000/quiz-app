@@ -8,14 +8,12 @@ class AdicionarTexto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Expanded(
-            child: Center(
-              child: Text(
-                texto,
-                textAlign: TextAlign.center,
-                style: estiloFonte,
-                ),
-              ) 
-        );
+    return  Center(
+      child: Text(
+        texto,
+        textAlign: TextAlign.center,
+        style: estiloFonte,
+        ),
+      );
   }
 }

@@ -32,13 +32,16 @@ class _HomePageState extends State<HomePage> {
             )
           ) 
         ),
-         AdicionarTexto(texto: "We provide make more experience \n for playing game.Just be happy !",
-          estiloFonte: GoogleFonts.roboto(
-            textStyle: const TextStyle(
-              fontSize: 19.0,
-              color: Colors.white
-            )
-          ) ),
+         Expanded(
+           child: AdicionarTexto(texto: "We provide make more experience \n for playing game.Just be happy !",
+            estiloFonte: GoogleFonts.roboto(
+              textStyle: const TextStyle(
+                fontSize: 19.0,
+                color: Colors.white
+              )
+            ) ),
+         ),
+        
          Expanded(
           child: Padding(
             padding:  EdgeInsets.all(20.0),
