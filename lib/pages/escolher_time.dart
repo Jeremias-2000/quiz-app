@@ -65,7 +65,9 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
             color: Colors.green,
             size: 75.0,
             
-            ),onPressed: (){},
+            ),onPressed: (){
+              Navigator.of(context).pushReplacementNamed("/perguntas");
+            },
           
           ),
           SizedBox(height: 45.0,)

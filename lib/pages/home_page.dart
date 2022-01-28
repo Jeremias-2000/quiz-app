@@ -55,9 +55,11 @@ class _HomePageState extends State<HomePage> {
                   fillColor: Colors.blueAccent,
                   border: OutlineInputBorder (
                     borderSide: BorderSide.none, 
-                    borderRadius: BorderRadius.circular (50) ),
-                    hintText: "ENTER YOUR NAME" ,
+                    borderRadius: BorderRadius.circular (50) 
                     
+                    ),
+                    hintText: "ENTER YOUR NAME" ,
+                  
                 ) 
             )
              
@@ -85,7 +87,8 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         )
-        )
+        ),
+        
       ],
     );
   }
