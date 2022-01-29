@@ -16,8 +16,7 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
     return SafeArea(
       child: Scaffold(
         body: Column(
-          mainAxisAlignment:
-              MainAxisAlignment.spaceBetween, //espaco entre em cima e em baixo
+          mainAxisAlignment: MainAxisAlignment.spaceBetween, //espaco entre em cima e em baixo
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             
@@ -27,14 +26,13 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
               child: Image.asset("assets/images/lupa.png"),
             ),
             AdicionarTexto(
-                texto: "YOUR TEAM \nIS READY !",
-                estiloFonte: GoogleFonts.lilitaOne(
-                    textStyle:
-                        const TextStyle(
-                          fontSize: 35.0,
-                          color: Colors.black
-                        )
+              texto: "YOUR TEAM \nIS READY !",
+              estiloFonte: GoogleFonts.lilitaOne(
+                textStyle:const TextStyle(
+                  fontSize: 35.0,
+                  color: Colors.black
                 )
+              )
             ),
             Expanded(
               child: Row(
@@ -50,31 +48,28 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
 
             Expanded(
               child:Row(
-                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                     AdicionarAvatar(caminhoImagem: "assets/images/avatar3.png", texto: "Laura"),
                     AdicionarAvatar(caminhoImagem: "assets/images/avatar4.png", texto: "Marcos"),
-                ],) 
-            
+                ],
+              ), 
             ),
-            
-            
+                       
           IconButton(
-            icon: Icon(Icons.play_circle_filled,
-            color: Colors.green,
-            size: 75.0,
-            
-            ),onPressed: (){
+            icon: Icon(
+              Icons.play_circle_filled,
+              color: Colors.green,
+              size: 75.0,
+            ),
+            onPressed: (){
               Navigator.of(context).pushReplacementNamed("/perguntas");
             },
-          
           ),
           SizedBox(height: 45.0,)
           ],
           
-          
-
         ),
       ),
     );

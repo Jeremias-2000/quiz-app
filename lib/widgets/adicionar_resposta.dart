@@ -10,15 +10,16 @@ class AdicionarResposta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Container(
-                width: 75.0,
-                height: 25.0,
-                color: Colors.green,
-                child: AdicionarTexto(
-                    texto: texto,
-                    estiloFonte: fonte),
-              ),
-            );
+      padding: const EdgeInsets.all(20.0),
+      child: Container(
+        width: 75.0,
+        height: 25.0,
+        color: Colors.green,
+        child: AdicionarTexto(
+          texto: texto,
+          estiloFonte: fonte
+        ),
+      ),
+    );
   }
 }

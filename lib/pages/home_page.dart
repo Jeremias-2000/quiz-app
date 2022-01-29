@@ -42,20 +42,21 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
          Expanded(
-           child: AdicionarTexto(texto: "We provide make more experience \n for playing game.Just be happy !",
-            estiloFonte: GoogleFonts.roboto(
-              textStyle: const TextStyle(
-                fontSize: 19.0,
-                color: Colors.white
-              )
-            ) ),
+           child: AdicionarTexto(
+             texto: "We provide make more experience \n for playing game.Just be happy !",
+             estiloFonte: GoogleFonts.roboto(
+                textStyle: const TextStyle(
+                  fontSize: 19.0,
+                  color: Colors.white
+                )
+              ) 
+            ),
          ),
         
          Expanded(
           child: Padding(
             padding:  EdgeInsets.all(20.0),
-            child:
-            TextField (
+            child:TextField (
                 cursorColor: Colors.white,
                 style:const  TextStyle ( color: Colors.white,),
                 textAlign: TextAlign.center,
@@ -65,10 +66,8 @@ class _HomePageState extends State<HomePage> {
                   border: OutlineInputBorder (
                     borderSide: BorderSide.none, 
                     borderRadius: BorderRadius.circular (50) 
-                    
-                    ),
-                    hintText: "ENTER YOUR NAME" ,
-                  
+                  ),
+                  hintText: "ENTER YOUR NAME" ,
                 ) 
             )
              
@@ -84,18 +83,19 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.of(context).pushReplacementNamed("/escolher/time");
                 },
-                child: Text("CREATE YOUR TEAM",
+                child: Text(
+                  "CREATE YOUR TEAM",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.lilitaOne(
                     textStyle: const TextStyle(
-                          fontSize: 28.0, 
-                          color: Colors.white
-                        )
+                      fontSize: 28.0, 
+                      color: Colors.white
+                    )
                   )
                 ),
+              ),
             ),
-          ),
-        )
+          )
         ),
         
       ],
@@ -107,16 +107,18 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
           body: Stack(
-                children: [
-          SizedBox(
-              height: MediaQuery.of(context).size.height,
-              child: Image.asset(
-                "assets/images/quiz_background.jpeg",
-                fit: BoxFit.cover,
-              )),
-          _body()
-                ],
-              )),
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                child: Image.asset(
+                  "assets/images/quiz_background.jpeg",
+                  fit: BoxFit.cover,
+                )
+              ),
+              _body()
+            ],
+          )
+      ),
     );
   }
 }

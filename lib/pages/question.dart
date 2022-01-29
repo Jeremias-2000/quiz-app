@@ -42,10 +42,14 @@ class _QuestionPageState extends State<QuestionPage> {
               ],
             ),
             AdicionarTexto(
-                texto: "YOUR POINTS:",
-                estiloFonte: GoogleFonts.lilitaOne(
-                    textStyle:
-                        const TextStyle(fontSize: 25.0, color: Colors.black))),
+              texto: "YOUR POINTS:",
+              estiloFonte: GoogleFonts.lilitaOne(
+                textStyle:const TextStyle(
+                  fontSize: 25.0, 
+                  color: Colors.black
+                )
+              )
+            ),
             AdicionarTexto(
                 texto: "789",
                 estiloFonte: GoogleFonts.lilitaOne(

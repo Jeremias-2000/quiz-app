@@ -14,15 +14,19 @@ class AdicionarAvatar extends StatelessWidget {
     return  Column(children: <Widget>[
       
       Container(
-          width: 150,
-          height: 150,
-        child:Image.asset(caminhoImagem), )
+        width: 150,
+        height: 150,
+        child:Image.asset(caminhoImagem), 
+      )
         ,
       AdicionarTexto(
-          texto: texto,
-          estiloFonte: GoogleFonts.lilitaOne(
-              textStyle: const TextStyle(fontSize: 35.0, color: Colors.black)
+        texto: texto,
+        estiloFonte: GoogleFonts.lilitaOne(
+          textStyle: const TextStyle(
+            fontSize: 35.0,
+            color: Colors.black
           )
+        )
       ),
       
     ]);
