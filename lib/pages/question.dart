@@ -1,5 +1,5 @@
 import 'package:avaliacao2_quiz/widgets/adicionar_pergunta.dart';
-import 'package:avaliacao2_quiz/widgets/adicionar_resposta.dart';
+import 'package:avaliacao2_quiz/widgets/adicionar_alternativa.dart';
 import 'package:avaliacao2_quiz/widgets/adicionar_texto.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -57,29 +57,10 @@ class _QuestionPageState extends State<QuestionPage> {
                         const TextStyle(fontSize: 38.0, color: Colors.black))),
             const AdicionarPergunta(numeroPergunta: 'QUESTION 1',pergunta: 'HOW MANY BITCOINS WILL \nTHERE EVER BE ?'),
             
-            AdicionarResposta(
-                texto: 'teste',
-                fonte: GoogleFonts.roboto(
-                    textStyle:
-                        const TextStyle(fontSize: 25.0, color: Colors.white))),
-             AdicionarResposta(
-                texto: 'teste',
-                fonte: GoogleFonts.roboto(
-                    textStyle:
-                        const TextStyle(fontSize: 25.0, color: Colors.white))),
-             AdicionarResposta(
-                texto: 'teste',
-                fonte: GoogleFonts.roboto(
-                    textStyle:
-                        const TextStyle(fontSize: 25.0, color: Colors.white))),
-           
-             AdicionarResposta(
-                texto: 'teste',
-                fonte: GoogleFonts.roboto(
-                    textStyle:
-                        const TextStyle(fontSize: 25.0, color: Colors.white)))
-            
-            ,
+            AdicionarAlternativa(texto: 'teste',),
+            AdicionarAlternativa(texto: 'teste',),
+            AdicionarAlternativa(texto: 'teste',),      
+            AdicionarAlternativa(texto: 'teste',),
             //aqui ficara as alternativas para se clicar
             //caso o usuario dê um clique troca-se a cor do texto da alternativa
           ],
