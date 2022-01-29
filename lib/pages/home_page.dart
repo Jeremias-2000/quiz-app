@@ -1,5 +1,8 @@
+
+
 import 'package:avaliacao2_quiz/widgets/adicionar_texto.dart';
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,6 +13,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+ /*  @override
+  void initState(){
+    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
+  } */
   Widget _body() {
     return Column(
       mainAxisAlignment:
@@ -24,13 +31,15 @@ class _HomePageState extends State<HomePage> {
           height: 150,
           child: Image.asset("assets/images/coroa.png"),
         ),
-        AdicionarTexto(texto: "QUIZ APP", 
-          estiloFonte: GoogleFonts.lilitaOne(
-            textStyle: const TextStyle(
-              fontSize: 35.0,
-              color: Colors.white
-            )
-          ) 
+        Expanded(
+          child: AdicionarTexto(texto: "QUIZ APP", 
+            estiloFonte: GoogleFonts.lilitaOne(
+              textStyle: const TextStyle(
+                fontSize: 35.0,
+                color: Colors.white
+              )
+            ) 
+          ),
         ),
          Expanded(
            child: AdicionarTexto(texto: "We provide make more experience \n for playing game.Just be happy !",
@@ -48,7 +57,7 @@ class _HomePageState extends State<HomePage> {
             child:
             TextField (
                 cursorColor: Colors.white,
-                style: TextStyle ( color: Colors.white,),
+                style:const  TextStyle ( color: Colors.white,),
                 textAlign: TextAlign.center,
                 decoration: InputDecoration ( 
                   filled: true,
@@ -98,7 +107,7 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
           body: Stack(
-        children: [
+                children: [
           SizedBox(
               height: MediaQuery.of(context).size.height,
               child: Image.asset(
@@ -106,8 +115,8 @@ class _HomePageState extends State<HomePage> {
                 fit: BoxFit.cover,
               )),
           _body()
-        ],
-      )),
+                ],
+              )),
     );
   }
 }

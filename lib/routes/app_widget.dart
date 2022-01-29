@@ -1,6 +1,7 @@
 import 'package:avaliacao2_quiz/pages/escolher_time.dart';
 import 'package:avaliacao2_quiz/pages/home_page.dart';
 import 'package:avaliacao2_quiz/pages/question.dart';
+
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {

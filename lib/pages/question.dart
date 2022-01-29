@@ -1,4 +1,8 @@
+import 'package:avaliacao2_quiz/widgets/adicionar_pergunta.dart';
+import 'package:avaliacao2_quiz/widgets/adicionar_resposta.dart';
+import 'package:avaliacao2_quiz/widgets/adicionar_texto.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class QuestionPage extends StatefulWidget {
   const QuestionPage({Key? key}) : super(key: key);
@@ -17,23 +21,61 @@ class _QuestionPageState extends State<QuestionPage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
-              children: [
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
                 //aqui sera colocado  o quadrado deitado, a imagem de score , e a imagem de avatar
+                Container(
+                  width: 55,
+                  height: 55,
+                  child: Image.asset('assets/images/estrela_.png'),
+                ),
+                Container(
+                  width: 130,
+                  height: 130,
+                  child: Image.asset('assets/images/trofeu_.png'),
+                ),
+                Container(
+                  width: 75,
+                  height: 75,
+                  child: Image.asset('assets/images/avatar1.png'),
+                ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Container(
-                width: 100,
-                height: 320,
-                color: Colors.blue,
-                child: Column(
-                  children: [
-                    //aqui ficara titulo 'questao 1' e a pergunta
-                  ],
-                ),
-              ),
-            ),
+            AdicionarTexto(
+                texto: "YOUR POINTS:",
+                estiloFonte: GoogleFonts.lilitaOne(
+                    textStyle:
+                        const TextStyle(fontSize: 25.0, color: Colors.black))),
+            AdicionarTexto(
+                texto: "789",
+                estiloFonte: GoogleFonts.lilitaOne(
+                    textStyle:
+                        const TextStyle(fontSize: 38.0, color: Colors.black))),
+            const AdicionarPergunta(numeroPergunta: 'QUESTION 1',pergunta: 'HOW MANY BITCOINS WILL \nTHERE EVER BE ?'),
+            
+            AdicionarResposta(
+                texto: 'teste',
+                fonte: GoogleFonts.roboto(
+                    textStyle:
+                        const TextStyle(fontSize: 25.0, color: Colors.white))),
+             AdicionarResposta(
+                texto: 'teste',
+                fonte: GoogleFonts.roboto(
+                    textStyle:
+                        const TextStyle(fontSize: 25.0, color: Colors.white))),
+             AdicionarResposta(
+                texto: 'teste',
+                fonte: GoogleFonts.roboto(
+                    textStyle:
+                        const TextStyle(fontSize: 25.0, color: Colors.white))),
+           
+             AdicionarResposta(
+                texto: 'teste',
+                fonte: GoogleFonts.roboto(
+                    textStyle:
+                        const TextStyle(fontSize: 25.0, color: Colors.white)))
+            
+            ,
             //aqui ficara as alternativas para se clicar
             //caso o usuario dê um clique troca-se a cor do texto da alternativa
           ],

@@ -6,8 +6,7 @@ class AdicionarAvatar extends StatelessWidget {
   final String caminhoImagem;
   final String texto;
 
-  const AdicionarAvatar(
-      {Key? key, required this.caminhoImagem, required this.texto})
+  const AdicionarAvatar({Key? key, required this.caminhoImagem, required this.texto})
       : super(key: key);
 
   @override
