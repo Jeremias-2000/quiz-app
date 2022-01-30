@@ -1,5 +1,7 @@
-import 'package:avaliacao2_quiz/widgets/adicionar_pergunta.dart';
+import 'package:avaliacao2_quiz/controller/app_controller.dart';
+
 import 'package:avaliacao2_quiz/widgets/adicionar_texto.dart';
+import 'package:avaliacao2_quiz/widgets/trocar_cor_alternativa.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,7 +20,8 @@ class AdicionarAlternativa extends StatelessWidget {
           borderRadius: BorderRadius.circular(18.0),
           side: BorderSide(color: Colors.red)),
         color: Colors.white,
-        textColor: Colors.red,
+        textColor: Colors.blue,
+       
         padding: EdgeInsets.all(14.0),
         onPressed: () {
           

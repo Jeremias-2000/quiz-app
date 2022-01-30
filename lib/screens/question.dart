@@ -61,8 +61,14 @@ class _QuestionPageState extends State<QuestionPage> {
             AdicionarAlternativa(texto: 'teste',),
             AdicionarAlternativa(texto: 'teste',),      
             AdicionarAlternativa(texto: 'teste',),
-            //aqui ficara as alternativas para se clicar
-            //caso o usuario dê um clique troca-se a cor do texto da alternativa
+
+            
+            //adicionar dois botões  um de help  e próximo 
+            Row(
+              children: [
+                
+              ],
+            )
           ],
         ),
       ),
