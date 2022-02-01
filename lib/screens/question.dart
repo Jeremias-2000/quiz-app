@@ -42,31 +42,80 @@ class _QuestionPageState extends State<QuestionPage> {
               ],
             ),
             AdicionarTexto(
-              texto: "YOUR POINTS:",
-              estiloFonte: GoogleFonts.lilitaOne(
-                textStyle:const TextStyle(
-                  fontSize: 25.0, 
-                  color: Colors.black
-                )
-              )
-            ),
+                texto: "YOUR POINTS:",
+                estiloFonte: GoogleFonts.lilitaOne(
+                    textStyle:
+                        const TextStyle(fontSize: 25.0, color: Colors.black))),
             AdicionarTexto(
                 texto: "789",
                 estiloFonte: GoogleFonts.lilitaOne(
                     textStyle:
                         const TextStyle(fontSize: 38.0, color: Colors.black))),
-            const AdicionarPergunta(numeroPergunta: 'QUESTION 1',pergunta: 'HOW MANY BITCOINS WILL \nTHERE EVER BE ?'),
-            
-            AdicionarAlternativa(texto: 'teste',),
-            AdicionarAlternativa(texto: 'teste',),
-            AdicionarAlternativa(texto: 'teste',),      
-            AdicionarAlternativa(texto: 'teste',),
+            const AdicionarPergunta(
+                numeroPergunta: 'QUESTION 1',
+                pergunta: 'HOW MANY BITCOINS WILL \nTHERE EVER BE ?'),
+              
+            AdicionarAlternativa(
+              texto: 'teste',
+            ),
+            AdicionarAlternativa(
+              texto: 'teste',
+            ),
+            AdicionarAlternativa(
+              texto: 'teste',
+            ),
+            AdicionarAlternativa(
+              texto: 'teste',
+            ),
 
-            
-            //adicionar dois botões  um de help  e próximo 
+            //adicionar dois botões  um de help  e próximo
             Row(
               children: [
-                
+                Expanded(
+                    child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: ButtonTheme(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                        
+                    child: RaisedButton(
+                      onPressed: () {
+                        print('Botão HELP foi pressionado !');
+                      },
+                      child: Text("HELP",
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.lilitaOne(
+                              textStyle: const TextStyle(
+                                  fontSize: 28.0, 
+                                  color: Colors.white))),
+                    ),
+                  ),
+                )),
+                Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: ButtonTheme(
+              shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+              child: RaisedButton(
+                onPressed: () {
+                 print('Botão NEXT foi pressionado !');
+                },
+                color: Colors.green,
+                child: Text(
+                  "NEXT",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.lilitaOne(
+                    textStyle: const TextStyle(
+                      fontSize: 28.0, 
+                      color: Colors.white
+                    )
+                  )
+                ),
+              ),
+            ),
+          )
+        ),
               ],
             )
           ],
