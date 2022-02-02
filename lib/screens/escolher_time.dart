@@ -11,11 +11,8 @@ class EscolherTimePage extends StatefulWidget {
 }
 
 class _EscolherTimePageState extends State<EscolherTimePage> {
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Column(
+Widget _body(){
+  return Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween, //espaco entre em cima e em baixo
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -30,7 +27,7 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
               estiloFonte: GoogleFonts.lilitaOne(
                 textStyle:const TextStyle(
                   fontSize: 35.0,
-                  color: Colors.black
+                  color: Colors.white70
                 )
               )
             ),
@@ -70,7 +67,23 @@ class _EscolherTimePageState extends State<EscolherTimePage> {
           SizedBox(height: 45.0,)
           ],
           
-        ),
+        );
+}
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
+          children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height,
+              child: Image.asset("assets/images/plano_fundo_avatar.jpg",
+              fit: BoxFit.cover,),
+            
+            ),
+            _body()
+          ],)
       ),
     );
   }

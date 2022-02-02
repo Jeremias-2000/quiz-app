@@ -24,7 +24,7 @@ class AdicionarAvatar extends StatelessWidget {
         estiloFonte: GoogleFonts.lilitaOne(
           textStyle: const TextStyle(
             fontSize: 35.0,
-            color: Colors.black
+            color: Colors.white
           )
         )
       ),

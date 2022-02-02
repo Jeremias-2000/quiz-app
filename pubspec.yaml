@@ -68,6 +68,7 @@ flutter:
     - assets/images/avatar4.png
     - assets/images/trofeu_.png
     - assets/images/estrela_.png
+    - assets/images/plano_fundo_avatar.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
